@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "migration": " wrangler d1 migrations apply DB"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "wrangler": "^3.22.0"
+  }
+}
