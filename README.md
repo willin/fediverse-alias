@@ -23,7 +23,7 @@ compatibility_date = "2023-01-01"
 
 # change these to your own domain
 routes = [
-	{ pattern = "log.lu/.well-known/webfinger*", zone_name = "log.lu" },
+  { pattern = "log.lu/.well-known/webfinger*", zone_name = "log.lu" },
   { pattern = "js.cool/.well-known/webfinger*", zone_name = "js.cool" },
   { pattern = "v0.chat/.well-known/webfinger*", zone_name = "v0.chat" },
   { pattern = "xn--wkua.xn--6qq986b3xl/.well-known/webfinger*", zone_name = "xn--wkua.xn--6qq986b3xl" },
