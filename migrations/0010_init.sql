@@ -7,4 +7,5 @@ CREATE TABLE `aliases` (
 );
 
 CREATE INDEX IF NOT EXISTS idx_aliases_user ON aliases(`owner`, `created_at`);
+CREATE INDEX IF NOT EXISTS idx_aliases_owner ON aliases(`owner`, `alias`);
 CREATE INDEX IF NOT EXISTS idx_aliases_status ON aliases(`alias`, `valid`);
