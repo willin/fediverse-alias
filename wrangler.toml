@@ -2,16 +2,16 @@ name = "fediverse-alias"
 compatibility_date = "2023-01-01"
 
 routes = [
-  { pattern = "log.lu/.well-known/webfinger*", zone_name = "log.lu" },
-  { pattern = "js.cool/.well-known/webfinger*", zone_name = "js.cool" },
-  { pattern = "v0.chat/.well-known/webfinger*", zone_name = "v0.chat" },
-  { pattern = "xn--wkua.xn--6qq986b3xl/.well-known/webfinger*", zone_name = "xn--wkua.xn--6qq986b3xl" },
-  { pattern = "sh.gg/.well-known/webfinger*", zone_name = "sh.gg" },
-  { pattern = "css.fund/.well-known/webfinger*", zone_name = "css.fund" },
-  { pattern = "kaiyuan.fund/.well-known/webfinger*", zone_name = "kaiyuan.fund" },
-  { pattern = "v0.md/.well-known/webfinger*", zone_name = "v0.md" },
-  { pattern = "willin.org/.well-known/webfinger*", zone_name = "willin.org" },
-  { pattern = "willin.wang/.well-known/webfinger*", zone_name = "willin.wang" }
+  { pattern = "log.lu/.well-known/*", zone_name = "log.lu" },
+  { pattern = "js.cool/.well-known/*", zone_name = "js.cool" },
+  { pattern = "v0.chat/.well-known/*", zone_name = "v0.chat" },
+  { pattern = "xn--wkua.xn--6qq986b3xl/.well-known/*", zone_name = "xn--wkua.xn--6qq986b3xl" },
+  { pattern = "sh.gg/.well-known/*", zone_name = "sh.gg" },
+  { pattern = "css.fund/.well-known/*", zone_name = "css.fund" },
+  { pattern = "kaiyuan.fund/.well-known/*", zone_name = "kaiyuan.fund" },
+  { pattern = "v0.md/.well-known/*", zone_name = "v0.md" },
+  { pattern = "willin.org/.well-known/*", zone_name = "willin.org" },
+  { pattern = "willin.wang/.well-known/*", zone_name = "willin.wang" }
 ]
 
 # [vars]

@@ -3,6 +3,23 @@ const INSTANCE = 'log.lu';
 const handler: ExportedHandler = {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
+    if (url.pathname === '/.well-known/nodeinfo') {
+      return new Response(
+        JSON.stringify({
+          links: [
+            {
+              rel: 'http://nodeinfo.diaspora.software/ns/schema/2.0',
+              href: `https://${INSTANCE}/nodeinfo/2.0`
+            }
+          ]
+        }),
+        {
+          headers: {
+            'content-type': 'application/json;charset=UTF-8'
+          }
+        }
+      );
+    }
     const subject = url.searchParams.get('resource') || '';
     if (!/^acct:[^@]+@[^@]+$/.test(subject)) {
       return new Response('', { status: 400 });
